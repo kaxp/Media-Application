@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Books_Detail_Activity"
+    tools:showIn="@layout/activity_books__detail_">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/book_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            />
+        <TextView
+            android:id="@+id/book_detail_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/author"
+            android:layout_below="@id/book_detail_title"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@id/book_detail_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <android.support.v7.widget.AppCompatRatingBar
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/book_detail_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="2"
+                android:stepSize=".5"
+
+                />
+            <TextView
+                android:id="@+id/book_detail_reviews"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reviews"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/book_detail_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll"
+            android:text="@string/product_description"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/book_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/book_detail_des"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="this is the description"
+
+
+            />
+
+        <TextView
+            android:id="@+id/book_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_the_author"
+            android:layout_below="@id/book_description"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_marginBottom="70dp"
+            android:id="@+id/book_author_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="something about the author"
+            android:layout_below="@id/book_about"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    </ScrollView>
+
+</android.support.v4.widget.NestedScrollView>

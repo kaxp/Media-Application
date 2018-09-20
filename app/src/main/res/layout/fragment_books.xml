@@ -1,0 +1,25 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_fileName="gradient_animated_background.json"
+        app:lottie_autoPlay="true"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        app:lottie_repeatCount="100"
+        android:background="@color/colorPrimary"
+        app:lottie_repeatMode="reverse"
+        />
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/rv_books"
+    android:layout_height="match_parent"/>
+
+</RelativeLayout>

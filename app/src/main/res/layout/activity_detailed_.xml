@@ -1,0 +1,192 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+
+            <!--<view-->
+            <!--class="com.google.android.youtube.player.YouTubePlayerView"-->
+            <!--android:id="@+id/youtube"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--/>-->
+            <ProgressBar
+                android:indeterminateTint="#FFD700"
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/img_thumb"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+
+            <RelativeLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_image"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:id="@+id/detail_image"
+                        android:scaleType="centerCrop"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:background="@color/colorAccent"/>
+
+                </android.support.v7.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="@string/title"
+                    android:layout_toRightOf="@id/cv_image"
+                    />
+
+                <TextView
+                    android:id="@+id/detail_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/detail_title"
+                    android:text="@string/year"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/detail_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_year"
+                    android:text="@string/rating"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/cv_image"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/detail_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/based_on_reviews"
+                    android:layout_below="@id/detail_rating"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/cv_image"
+                    android:layout_marginLeft="10dp"
+                    />
+                <Button
+                    android:id="@+id/detail_button"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watch"
+                    android:layout_below="@id/detail_review"
+                    android:layout_toRightOf="@id/cv_image"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/detail_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/this_is_the_genre"
+                    android:layout_below="@+id/cv_image"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    />
+                <TextView
+                    android:id="@+id/detail_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_duration"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/detail_genre"
+                    android:layout_below="@id/cv_image"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <!--<TextView-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:id="@+id/detail_plot"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/plot_summary"-->
+                    <!--android:layout_below="@+id/detail_genre"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--/>-->
+
+                <TextView
+                    android:id="@+id/detail_plot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summary"
+                    android:layout_below="@id/detail_genre"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    />
+
+                <TextView
+                    android:id="@+id/detail_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is the summary"
+                    android:textSize="18sp"
+                    android:layout_below="@id/detail_plot"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="italic"
+
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
