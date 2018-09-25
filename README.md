@@ -5,6 +5,8 @@ The Screenshots of the app is given below.
 
 1> The MainActivity is this, 
 
-<img src="Images/Media1.png" height="1000">
+<img src="Images/Media1.png" height="700">
 
-2> 
+2> The Detailed Page is this
+
+<img src="Images/Media1.1.png" height="700">
