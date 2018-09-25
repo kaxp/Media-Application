@@ -13,4 +13,4 @@ The Screenshots of the app is given below.
 
 3> When Click on Watch Button is direct to Youtube
 
-<img src="Images/Media1.2.png" height="500"
+<img src="Images/Media1.2.png" height="500">
