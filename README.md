@@ -8,7 +8,7 @@ The Screenshots of the app is given below.
 
 <img src="Images/Media1.png" height="500">
 
-2> The Detailed Page is this when you click on "Your Name Movie".
+2> The Detailed Page is this when you click on "Your Name" Movie.
 
 <img src="Images/Media1.1.png" height="500">
 
