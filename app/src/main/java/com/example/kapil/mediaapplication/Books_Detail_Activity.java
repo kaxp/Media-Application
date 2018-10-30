@@ -24,6 +24,7 @@ public class Books_Detail_Activity extends AppCompatActivity {
     public TextView tv_description;
     public TextView tv_aboutAuthor;
     public ImageView tv_bannerImage;
+    private ImageView btn_back;
     Books m;
 
     private static final String TAG = "Detailed_Page";
@@ -42,6 +43,15 @@ public class Books_Detail_Activity extends AppCompatActivity {
         tv_description = findViewById(R.id.book_description);
         tv_aboutAuthor = findViewById(R.id.book_author_detail);
         tv_bannerImage = findViewById(R.id.books_banner);
+        btn_back=findViewById(R.id.btn_back);
+
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
 
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -65,5 +75,10 @@ public class Books_Detail_Activity extends AppCompatActivity {
         tv_aboutAuthor.setText(m.AboutAuthor);
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }

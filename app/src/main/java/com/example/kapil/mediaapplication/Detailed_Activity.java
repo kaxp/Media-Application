@@ -28,6 +28,7 @@ public class Detailed_Activity extends YouTubeBaseActivity {
     private ImageView img_thumb;
     private ImageView thumbnailImage;
     private Button detail_button;
+    private ImageView btn_back;
     Media m;
 
 
@@ -53,6 +54,16 @@ public class Detailed_Activity extends YouTubeBaseActivity {
         detail_button= findViewById(R.id.detail_button);
         img_thumb = findViewById(R.id.img_thumb);
 
+        btn_back=findViewById(R.id.btn_back);
+
+
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
 
         detail_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +86,8 @@ public class Detailed_Activity extends YouTubeBaseActivity {
         Intent intent = getIntent();
         m = intent.getParcelableExtra("media");
 
+
+        tv_title.setText(m.Title);
 
         Picasso.with(this)
                 .load(m.ThumbnailImage)

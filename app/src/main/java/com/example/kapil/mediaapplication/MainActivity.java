@@ -3,12 +3,12 @@ package com.example.kapil.mediaapplication;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +16,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.kapil.mediaapplication.fragment.Import;
 import com.example.kapil.mediaapplication.recycler_view.adapters.Fragment_Books;
 import com.example.kapil.mediaapplication.recycler_view.adapters.Fragment_Movies;
 import com.example.kapil.mediaapplication.recycler_view.adapters.Fragment_Tv_Shows;
@@ -24,7 +23,7 @@ import com.example.kapil.mediaapplication.recycler_view.adapters.Fragment_Tv_Sho
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Import import_frag;
+
     public TabLayout tabLayout;
     public ViewPager viewPager;
 

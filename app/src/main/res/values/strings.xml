@@ -23,7 +23,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="plot_summary" />
-    <string name="watch">Watch</string>
+    <string name="watch">Trailer</string>
     <string name="this_is_the_summary">this is the summary</string>
     <string name="total_duration">total duration</string>
     <string name="this_is_the_genre">this is the genre</string>
@@ -35,6 +35,7 @@
     <string name="reviews">reviews</string>
     <string name="product_description">Product Description</string>
     <string name="about_the_author">About The Author</string>
+    <string name="title_activity_dummy_activty">DummyActivty</string>
 
 
 </resources>

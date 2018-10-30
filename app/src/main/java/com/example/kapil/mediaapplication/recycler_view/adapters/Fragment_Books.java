@@ -114,6 +114,7 @@ public class Fragment_Books extends Fragment implements OnBookCellClick {
                 }
             }
 
+
             @Override
             public void onFailure(Call<BookRes> call, Throwable t) {
                 Log.e(TAG, "onFailure: "+ t.getMessage() );
